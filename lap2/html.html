@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>----------------BAI 1 2---------------</h2>
+    <div>
+        <div>
+            <label for="">Subject Name</label>
+            <input type="text" name="subject" id="subject_name">
+        </div>
+        <div>
+            <label for="">Change Point avg</label>
+            <input type="number" name="subject" id="subject_point">
+        </div>
+        <h2 id="title"></h2>
+        <div id="point_avg" style="border:3px solid red; display: block; padding: 5px; width: 400px;">
+            set point number <input type="text" onchange="point_number()" id="set_point_number">
+        </div>
+        <div>
+            <button type="submit" onclick="add_subject()">add</button>
+        </div>
+    </div>
+    
+    <div>
+        <label for=""><h2>info</h2></label>
+        <p name ="info" id="student_name"></p>
+        <p name ="info" id="student_age"></p>
+        <div id="address">
+        <p name ="info" id="student_address"></p>
+        <button onclick="change_address()">change address</button>
+        </div>
+        <p name ="info" id="student_subject"></p>
+        <p name ="info" id="student_point"></p>
+    </div>
+    <h2>----------------BAI 3---------------</h2>
+    <div>
+        <div>
+            <label for="">Subject Name</label>
+            <input type="text" name="subject" id="subject_name_2">
+        </div>
+        <div>
+            <label for="">Point</label>
+            <input type="number" name="subject" id="subject_point_2">
+        </div>
+        <div>
+            <button type="submit" onclick="add_subject_2()">add</button>
+        </div>
+    </div>
+    
+    <div>
+        <label for=""><h2>info</h2></label>
+        <p name ="info" id="student_name_2"></p>
+        <p name ="info" id="student_age_2"></p>
+        <p name ="info" id="student_address_2"></p>
+        <p name ="info" id="student_subject_2"></p>
+        <p name ="info" id="student_point_2"></p>
+    </div>
+    <h2>-----------------BAI 4----------------------</h2>
+    <div id="bai4">
+        person_1 name <input type="text" name="1" id="name_1" value=""><br>
+        person_1 age<input type="text" name="1" id="age_1"><br>
+        person_1 address<input type="text" name="1" id="address_1"><br>
+        person_2 name<input type="text" name="1" id="name_2"><br>
+        person_2 age<input type="text" name="1" id="age_2"><br>
+        person_2 address<input type="text" name="1"  id="address_2"><br>
+        <p name ="info" id="show_name_1"></p>
+        <p name ="info" id="show_age_1"></p>
+        <p name ="info" id="show_address_1"></p>
+        <p name ="info" id="show_name_2"></p>
+        <p name ="info" id="show_age_2"></p>
+        <p name ="info" id="show_address_2"></p>
+        <button type="submit" onclick="show_inf()">show inf</button>
+    </div>
+    <footer>
+        <script src="js.js"></script>
+    </footer>
+</body>
+</html>
